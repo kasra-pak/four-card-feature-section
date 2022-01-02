@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  font-size: 15px;
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --Ver-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayis-Blue: hsl(229, 6%, 66%);
+  --Ver-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--Ver-Light-Gray);
+  color: var(--Grayis-Blue);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
+h1, h2, p { margin: 0; }
+
+.txt-center { text-align: center; }
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header__title {
+  font-weight: 200;
+  font-size: 1.75rem;;
+}
+
+.header__subtitle {
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+b { font-weight: 600; }
+
+[class$="__title"] { color: var(--Ver-Dark-Blue); }
+
+.feature-section {
+  margin-top: 5.5rem;;
+}
+
+.card {
+  border-radius: 0.5em;
+  padding: 1.75em 2em;
+  box-shadow: 0px 8px 20px rgba(0,0,120,0.15);
+}
+
+.card + .card { margin-top: 1.6em; }
+
+.card__title {
+  margin-bottom: 0.15em;
+}
+
+.card__subtitle {
+  font-size: 0.9rem;
+}
+
+.card__img {
+  display: block;
+  margin: 2em 0 0.5em auto;
+}
+
+  
+.blue-border { border-top: 4px solid var(--Blue); }
+.cyan-border { border-top: 4px solid var(--Cyan); }
+.orange-border { border-top: 4px solid var(--Orange); }
+.red-border { border-top: 4px solid var(--Red); }
